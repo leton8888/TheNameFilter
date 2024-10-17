@@ -177,12 +177,12 @@ rules:
 rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
-  qcy: &qcy {type: http, interval: 86400, behavior: domain, format: text}
+  leton: &leton {type: http, interval: 86400, behavior: domain, format: text}
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   private_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
-  proxylite: {!!merge <<: *qcy, url: "https://raw.githubusercontent.com/qcyhub/rule/master/ProxyLite.list"}
-  ai: {!!merge <<: *qcy, url: "https://raw.githubusercontent.com/qcyhub/rule/master/AI.list"}
+  proxylite: {!!merge <<: *leton, url: "https://raw.githubusercontent.com/leton8888/TheNameFilter/refs/heads/main/ProxyLite.list"}
+  ai: {!!merge <<: *leton, url: "https://raw.githubusercontent.com/leton8888/TheNameFilter/refs/heads/main/AI.list"}
   youtube_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   google_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
   github_domain: {!!merge <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
