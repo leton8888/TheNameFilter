@@ -1,4 +1,10 @@
 # Blocked by AirPort
+# VOA 相关
 DOMAIN-SUFFIX,voachinese.com
+DOMAIN-SUFFIX,rezync.com
+DOMAIN-SUFFIX,pippio.com
+DOMAIN-SUFFIX,disqus.com
+DOMAIN-SUFFIX,crazyegg.com
+# 自由亚洲
 DOMAIN-SUFFIX,rfa.org
 DOMAIN-SUFFIX,rfi.fr
