@@ -2,6 +2,7 @@
 # VOA 相关
 DOMAIN-SUFFIX,voanews.com
 DOMAIN-SUFFIX,gdb.voanews.com
+DOMAIN-SUFFIX,voanews.eu
 DOMAIN-SUFFIX,voachinese.com
 DOMAIN-SUFFIX,rezync.com
 DOMAIN-SUFFIX,pippio.com
